@@ -12,6 +12,7 @@
 		112959FC1CCFD36200F63D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112959FA1CCFD36200F63D79 /* Main.storyboard */; };
 		112959FE1CCFD36200F63D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112959FD1CCFD36200F63D79 /* Assets.xcassets */; };
 		11295A011CCFD36200F63D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112959FF1CCFD36200F63D79 /* LaunchScreen.storyboard */; };
+		11295A091CD00F9C00F63D79 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11295A081CD00F9C00F63D79 /* QuoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		112959FD1CCFD36200F63D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11295A001CCFD36200F63D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11295A021CCFD36200F63D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11295A081CD00F9C00F63D79 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				112959F61CCFD36200F63D79 /* AppDelegate.swift */,
 				112959F81CCFD36200F63D79 /* ViewController.swift */,
+				11295A081CD00F9C00F63D79 /* QuoteTableViewCell.swift */,
 				112959FA1CCFD36200F63D79 /* Main.storyboard */,
 				112959FD1CCFD36200F63D79 /* Assets.xcassets */,
 				112959FF1CCFD36200F63D79 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				112959F91CCFD36200F63D79 /* ViewController.swift in Sources */,
 				112959F71CCFD36200F63D79 /* AppDelegate.swift in Sources */,
+				11295A091CD00F9C00F63D79 /* QuoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
