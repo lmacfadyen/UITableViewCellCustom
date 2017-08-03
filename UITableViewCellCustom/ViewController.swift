@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         
         // Only show separators where there is data
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         // Dynamically size the height of the table view cells
         tableView.estimatedRowHeight = 64.0
@@ -43,23 +43,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     // Only one section in the table view
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     // Rows is equal to the number of Quotes defined above
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return quotes.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Our custom cell so we can access the quote text and author
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! QuoteTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! QuoteTableViewCell
         
         // Surrounding quotes with quotation marks and factoring in locale
-        let locale = NSLocale.currentLocale()
-        let qBegin = locale.objectForKey(NSLocaleQuotationBeginDelimiterKey) as? String ?? "\""
-        let qEnd = locale.objectForKey(NSLocaleQuotationEndDelimiterKey) as? String ?? "\""
+        let locale = Locale.current
+        let qBegin = (locale as NSLocale).object(forKey: NSLocale.Key.quotationBeginDelimiterKey) as? String ?? "\""
+        let qEnd = (locale as NSLocale).object(forKey: NSLocale.Key.quotationEndDelimiterKey) as? String ?? "\""
         
         let row = indexPath.row
         // Set the labels in the custom cell
